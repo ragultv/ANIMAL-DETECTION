@@ -16,9 +16,9 @@ TWILIO_AUTH_TOKEN = "7ab3a6d0d974b80a8331f75c241c8389"  # Replace with your Twil
 TWILIO_PHONE_NUMBER = "+14708237104"
 
 # Paths
-PROTO_PATH = r"C:\\Users\\tragu\\Downloads\\ANIMAL DETECTION\\ANIMAL DETECTION\\animal detection in farmland\\models\\MobileNetSSD_deploy.prototxt.txt"
-MODEL_PATH = r"C:\\Users\\tragu\\Downloads\\ANIMAL DETECTION\\ANIMAL DETECTION\\animal detection in farmland\\models\\MobileNetSSD_deploy.caffemodel"
-SIREN_PATH = r"C:\\Users\\tragu\\Downloads\\ANIMAL DETECTION\\ANIMAL DETECTION\\animal detection in farmland\\siren\\Siren.wav"
+PROTO_PATH = "MobileNetSSD_deploy.prototxt.txt"
+MODEL_PATH = "MobileNetSSD_deploy.caffemodel"
+SIREN_PATH = "Siren.wav"
 
 # Load the pre-trained model
 def load_model(proto_path, model_path):
@@ -67,7 +67,7 @@ def detect_animals():
     COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
 
     print("[INFO] Starting video stream...")
-    vs = cv2.VideoCapture(r"C:\Users\tragu\Downloads\ANIMAL DETECTION\ANIMAL DETECTION\animal detection in farmland\animal detection.mp4")
+    vs = cv2.VideoCapture(0)
     time.sleep(2.0)
     fps = FPS().start()
 
