@@ -36,8 +36,8 @@ class Siren:
 
 
 def start_detection(siren=None):
-    proto = (r"C:\Users\tragu\Downloads\animal-detection-using-ssd-algorithm-main\animal-detection-using-ssd-algorithm-main\MobileNetSSD_deploy.prototxt.txt")
-    model = (r"C:\Users\tragu\Downloads\animal-detection-using-ssd-algorithm-main\animal-detection-using-ssd-algorithm-main\MobileNetSSD_deploy.caffemodel")
+    proto = ("MobileNetSSD_deploy.prototxt.txt")
+    model = ("MobileNetSSD_deploy.caffemodel")
 
     CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow",
                "dining-table", "dog", "horse", "motorbike", "person", "potted plant", "sheep", "sofa", "train",
@@ -55,7 +55,7 @@ def start_detection(siren=None):
     count = []
     flag = 0
     c = 0  # Initialize c
-    siren_wav = r"C:\Users\tragu\Downloads\animal-detection-using-ssd-algorithm-main\animal-detection-using-ssd-algorithm-main\Siren.wav"
+    siren_wav = "Siren.wav"
 
     while vs:
         success, frame = vs.read()
