@@ -10,10 +10,10 @@ import os
 from twilio.rest import Client
 
 # Configuration for Twilio
-FARM_OWNER_NUMBER = "+918838868452"  # Replace with the owner's number
-TWILIO_ACCOUNT_SID = "ACbef0e7f9127fd39c1dc0894977f4e63e"  # Replace with your Twilio SID
-TWILIO_AUTH_TOKEN = "7ab3a6d0d974b80a8331f75c241c8389"  # Replace with your Twilio Auth Token
-TWILIO_PHONE_NUMBER = "+14708237104"
+FARM_OWNER_NUMBER = "+91xxxxxxxxxx"  # Replace with the owner's number
+TWILIO_ACCOUNT_SID = "xxxxxxxxxxxxxxxxxxxx"  # Replace with your Twilio SID
+TWILIO_AUTH_TOKEN = "xxxxxxxxxxxxxxxxx"  # Replace with your Twilio Auth Token
+TWILIO_PHONE_NUMBER = "xxxxxxxxxxxxxxx"  # Replace with your Twilio number
 
 # Paths
 PROTO_PATH = "MobileNetSSD_deploy.prototxt.txt"
